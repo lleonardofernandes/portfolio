@@ -69,7 +69,7 @@ html, body {
     transform: perspective(1000px) rotateY(20deg);
 }
 
-#sidebar hr{
+#sidebar hr {
     border: 1px solid  #c0c0c0;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
@@ -81,7 +81,7 @@ html, body {
     justify-content: center; /* Alinha os itens ao centro horizontalmente */
 }
 
-#sidebar .profile .social-links a{
+#sidebar .profile .social-links a {
     font-size: 1.2rem;
     background-color: #9c9c9c;
     color: #fff;
@@ -183,6 +183,7 @@ section#home {
     height: 100vh;
 }
 
+
 section#home h2 {
     font-size: 6rem;
 }
@@ -192,18 +193,23 @@ section#home span#subtitle {
     font-size: 1.5rem;
 }
 
-section#home div#arraste {
+section#home div#drag {
     width: 9rem;
 }
 
-section#home div#arraste a {
+section#home div#drag a {
     text-decoration: none;
     color: #000;
 }
+
+
+section#about h2 {
+    text-align: left;
+}
+
 .text-shadow {
     text-shadow: 4px 4px 10px #000;
 }
-
 
 
 
@@ -261,3 +267,22 @@ i.menu-mobile {
     right: 50px;
     /* transition: all ease-in-out 0.5s; */
 }
+
+
+
+/* estilo do scrollbar */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #dd6e14;
+    border-radius: 5%;
+}
+
