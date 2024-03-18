@@ -232,7 +232,7 @@ i.menu-mobile {
     font-size: 1.5rem;
     border-radius: 4rem;
     cursor: pointer;
-    /* z-index: 10; */
+    z-index: 10;
     width: 45px;
     height: 45px;
     display: none; /*esconde o icone do menu */
@@ -248,6 +248,7 @@ i.menu-mobile {
 .menu-nav-active #sidebar {
     left: 0;
 }
+
 
 .menu-nav-active #footer {
     left: 0;

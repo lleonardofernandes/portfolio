@@ -1,0 +1,117 @@
+@media (max-width: 1024px) {
+    #sidebar {
+        left: -300px; /* esconde a barra de menu */ 
+        z-index: 9998;
+    } 
+
+    i.menu-mobile {
+        display: flex; /* vai mostrar a barra de menu de hamburguer*/
+        z-index: 9998;
+        margin-top: 10px;
+        top: 0;
+
+    }
+
+    section#home h2{
+        font-size: 3rem;
+    }
+    section#home span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    
+
+    #main {
+        margin-left: 0;
+        /* z-index: 9995;   */
+    }
+
+    /* #main h2, #main h5{
+        font-size: 0.95rem;
+    }
+    
+    #main h3, 
+    #main h6,
+    #main .form-control, #main .form-select{
+        font-size: .7rem;
+    } */
+    
+    /* #main .form-label, 
+    #main .form-check-label {
+        font-size: .8rem;
+    } */
+
+    /* #main .custom-modal-dialog-header{
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.3);
+        z-index: 9997;
+    } */
+
+    /* #main .custom-modal-dialog-header ol{
+        margin: 0;
+        padding: 7px 0;
+    }
+
+
+    #main, #main .custom-modal-dialog {
+        margin-left: 0;
+        z-index: 9995;  
+    }
+    
+    
+    #main .custom-modal-dialog h2,
+    #main .custom-modal-dialog ol{
+        display: none;
+        font-weight: 500; 
+    }
+
+    #main .modal-header .close {
+        display: none;
+    } */
+    
+     /* span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    } */
+
+    /* #main .custom-modal-dialog .custom-label-form{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    } */
+
+    #main .custon-span {
+       display: none;
+    }
+    
+
+
+    #footer{
+        /* display: none; */
+        /* position: static; */
+        width: 100%;
+        text-align: left;
+        padding: 2px 2px;
+        z-index: 9999;  
+    }
+
+
+   /* estilização do formulário popup */
+
+   
+    #main .alert {        
+        z-index: 9999;
+        top: 55px;
+        /* right: 50px; */
+    }
+
+
+
+}
