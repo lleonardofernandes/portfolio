@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3d3935;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="seta_copy" data-name="seta copy" class="cls-1" d="M1745.03,509.99l-1.79,1.8,4.16,4.186h-18.32a1.017,1.017,0,0,0,0,2.034h18.32l-4.16,4.187,1.79,1.8,6.96-7Zm-21,5.984h-1.01a1.017,1.017,0,0,0,0,2.034h1.01A1.017,1.017,0,0,0,1724.03,515.974Z" transform="translate(-1722 -510)"/>
+</svg>
