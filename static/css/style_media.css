@@ -92,7 +92,6 @@
     }
     
 
-
     #footer{
         /* display: none; */
         /* position: static; */
@@ -102,9 +101,6 @@
         z-index: 9999;  
     }
 
-
-   /* estilização do formulário popup */
-
    
     #main .alert {        
         z-index: 9999;
@@ -112,6 +108,17 @@
         /* right: 50px; */
     }
 
+    
+}
+
+@media (max-width: 1680px) {
+    .carousel-control-prev {
+        margin-left: 0;
+    }
+    
+    .carousel-control-next {
+        margin-right: 0;
+    }
 
 
 }
