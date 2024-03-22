@@ -4,30 +4,18 @@
     outline: 1px solid #ccc;
 } */
 
+.obrigatorio::after {
+    content: " *";
+    color: red;
+}
+
 html, body {
     font-family: "Roboto",  sans-serif;
     /* font-family: 'Gill Sans MT Pro Grk W04 Bold',  sans-serif; */
     width: 100%;
     height: 100%;
     margin: 0 0 8px;
-    /* text-size-adjust: none; */
     -webkit-text-size-adjust: none;
-
-    /* background: #ececec; */
-    /* -webkit-font-smoothing: antialiased; */
-
-    /* background-image: url("/static/img/bg_site.png") !important; */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    height: 100vh; */
-}
-
-.obrigatorio::after {
-    content: " *";
-    color: red;
 }
 
 #sidebar {
@@ -37,22 +25,29 @@ html, body {
     bottom: 0;
     /* background: #021124; */
     background: #fafafa;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 9998;
     /* border-right: 1px solid #ccc; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    /* border: 10px;
-    border-color: #000; */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    /* border: 10px; */
+    /* border-color: #000; */
 }
 
-#sidebar .logo{
-    padding-bottom: 1px;
+#sidebar hr {
+    border: 1px solid  #c0c0c0;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
-#sidebar .profile{
+#sidebar .logo {
+    padding-bottom: 2px;
+    border: 0;
+}
+
+
+#sidebar .profile {
     border-top: 2px solid #fff;
     margin: 10px 0;
     /* border: 1px solid  #000; */
@@ -60,19 +55,16 @@ html, body {
 }
 
 #sidebar .profile img{
-    margin: 20px auto 10px auto; /* cima, direita, baixo, esquerda  */
+    margin: 10px auto; /* cima, direita, baixo, esquerda  */
     display: block;
-    width: 270px;
+    width: 250px;
     /* border: 1px solid #2c2f3f; */
-    border-radius: 5%;
+    border-radius: 3%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transform: perspective(1000px) rotateY(20deg);
 }
 
-#sidebar hr {
-    border: 1px solid  #c0c0c0;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-}
+
 
 /* estilo das redes sociais */
 #sidebar .profile .social-links{
@@ -97,61 +89,61 @@ html, body {
 
 
 /* Espaçado do menu*/
-#sidebar .nav-menu {
+.nav-menu {
     padding: 1rem;
 }
 
 /* Deixa o fundo estático do item selecionado */
-#sidebar .nav-menu a.selected{
+/* #sidebar .nav-menu a.selected{
     background-color: #ff8200;
     color: #fff; 
-    box-shadow: 0 0 px 3px rgba(255, 130, 0, 0.5);
-    font-weight: bold;
-}
+    box-shadow: 0 0 3px rgba(255, 130, 0, 0.5);
+    font-weight: bold; */
+/* } */
 /* Deixa o fundo estático do icone do item selecionado */
-#sidebar .nav-menu a.selected i {
+/* #sidebar .nav-menu a.selected i {
     background-color: #ff8200;
     color: #fff; 
     font-weight: bold;
-}
+} */
 
 /* itens do menu quando estiverem com/sem focus para ficar branco*/
-#sidebar .nav-menu a,
-#sidebar .nav-menu a:focus{
-    font-size: 15px;
-    display: flex;
+.nav-menu a,
+.nav-menu a:focus{
+    display: flex;    
     align-items: center;
     color: #a8a9b4;
     transition: 0.3s;
+    font-size: 15px;
 }
 
 /* cor do icone quando não estiver focado*/
-#sidebar .nav-menu a i,
-#sidebar .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
     font-size: 20px;
     padding-right: 0.8rem;
     color: #5e5e5e;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 /* Estiliza os itens do menu quando estiverem com/sem focus para ficar branco*/
-#sidebar .nav-menu a:hover,
+.nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus
-#sidebar .nav-menu li:hover > a {
+.nav-menu li:hover > a {
     text-decoration: none;
     color: #5e5e5e;
 }
 
 /* Estiliza os icones do menu quando passar o mouse por cima para ficar laranja*/
-#sidebar .nav-menu a:hover i,
+.nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-#sidebar .nav-menu li:hover > a i {
+.nav-menu li:hover > a i {
     color: #dd6e14;
 }
 
-#sidebar .nav-link {
+.nav-link {
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -167,10 +159,33 @@ html, body {
 
 #main h2 {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
 }
 
+section#home .custom-col-section-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section#home .custom-col-section-home h2 {
+    text-align: center;
+}
+
+
+section#home .custom-col-section-home-drag {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;    
+}
+
+section#home .custom-col-section-home-drag h2 {
+    text-align: center;
+}
 
 
 section#home {
@@ -186,11 +201,15 @@ section#home {
 
 section#home h2 {
     font-size: 6rem;
+    text-shadow: 2px 2px 8px #000000;;
+    color: black;
 }
 
 section#home span#subtitle {
+    text-align: center;
     margin-right: 8rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #000000;;
 }
 
 section#home div#drag {
@@ -199,8 +218,10 @@ section#home div#drag {
 
 section#home div#drag a {
     text-decoration: none;
-    color: #000;
+    color: #363636;
 }
+
+
 
 
 section#about h2 {
@@ -263,15 +284,15 @@ section#about h2 {
 
 
 .carousel-control-prev {
-    margin-left: -8rem;
+    margin-left: -6.5rem;
 }
 
 .carousel-control-next {
-    margin-right: -8rem;
+    margin-right: -6.5rem;
 }
 
 .carousel-indicators {
-    margin-bottom: -35px;
+    margin-bottom: -30px;
 }
 
 /* Criar o icone de menu hamburguer */
@@ -296,6 +317,7 @@ i.menu-mobile {
 .menu-nav-active {
     overflow: hidden;
 }
+
 
 .menu-nav-active #sidebar {
     left: 0;

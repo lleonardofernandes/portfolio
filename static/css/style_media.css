@@ -1,12 +1,12 @@
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
     #sidebar {
         left: -300px; /* esconde a barra de menu */ 
-        z-index: 9998;
+        z-index: 9997;
     } 
 
     i.menu-mobile {
         display: flex; /* vai mostrar a barra de menu de hamburguer*/
-        z-index: 9998;
+        z-index: 9999;
         margin-top: 10px;
         top: 0;
 
@@ -118,6 +118,10 @@
     
     .carousel-control-next {
         margin-right: 0;
+    }
+
+    [data-anime="right"] {
+        transform: translate3d(-100%, 0, 0); /*x y, z */
     }
 
 
