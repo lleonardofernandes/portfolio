@@ -1,14 +1,14 @@
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
 
-    // mudar o menu de list para X
     const menuMobile = document.querySelector('.menu-mobile');
     const body = document.querySelector('body');
 
-    menuMobile.addEventListener("click", () => {
+    menuMobile.addEventListener('click', () => {
         menuMobile.classList.contains("bi-list")
-            ? menuMobile.classList.replace("bi-list", "bi-x") // condição if ternário
-            : menuMobile.classList.replace("bi-x", "bi-list"); //condiçao else
+        ? menuMobile.classList.replace("bi-list", "bi-x" ) // condição if ternário
+        : menuMobile.classList.replace("bi-x", "bi-list"); //condiçao else
         body.classList.toggle("menu-nav-active"); //classe criada no css para voltar para posição original
     });
 
@@ -48,15 +48,15 @@ document.addEventListener('DOMContentLoaded', function () {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute('href').substring(1); // Removendo o caractere '#' do href
+            const targetId = this.getAttribute('href').substring(1); // Remove o caractere '#' do href
             const target = document.getElementById(targetId);
             if (target) {
-                const startPosition = window.pageYOffset; // Posição atual de rolagem
-                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset; // Posição do elemento de destino
-                const distance = targetPosition - startPosition; // Distância a rolar
+                const startPosition = window.pageYOffset; // Posição atual do scroll
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset; // Posição de destino do scroll
+                const distance = targetPosition - startPosition; // Distância para rolagem
 
-                const duration = 800; // Duração da animação em milissegundos
-                const startTime = performance.now(); // Tempo de início da animação
+                const duration = 800; // Duração da animação
+                const startTime = performance.now(); // Tempo início da animação
 
                 // Função de animação
                 function animateScroll(currentTime) {
@@ -82,6 +82,30 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const btnEnviar = document.querySelector('#btn-enviar')
+    const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+    btnEnviar.addEventListener('click', () => {
+        btnEnviarLoader.style.display = "block";
+        btnEnviar.style.display = "none";
+    });
+
+    //Tirar mensagem de alerta após algum tempo
+    setTimeout(() => {
+        document.querySelector('#main .alert').style.display = 'none';
+    }, 3000);
+
+    var alerts = document.querySelectorAll('#main .alert.slideIn');
+        alerts.forEach(function(alert) {
+            setTimeout(function() {
+                alert.classList.remove('slideIn');
+                alert.classList.add('slideOut');
+            }, 3000);
+            setTimeout(function() {
+                alert.style.opacity = '1';
+            }, 100);
+        });
 
 
 });

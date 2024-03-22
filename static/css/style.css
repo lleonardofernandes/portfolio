@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* * {
     outline: 1px solid #ccc;
@@ -8,6 +9,10 @@
     content: " *";
     color: red;
 }
+
+
+
+
 
 html, body {
     font-family: "Roboto",  sans-serif;
@@ -163,7 +168,7 @@ html, body {
     font-weight: bold;
 }
 
-section#home .custom-col-section-home {
+#home .custom-col-section-home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,19 +176,18 @@ section#home .custom-col-section-home {
     height: 100vh;
 }
 
-section#home .custom-col-section-home h2 {
+#home .custom-col-section-home h2 {
     text-align: center;
 }
 
-
-section#home .custom-col-section-home-drag {
+#home .custom-col-section-home-drag {
     display: flex;
     justify-content: end;
     align-items: end;
     flex-direction: column;    
 }
 
-section#home .custom-col-section-home-drag h2 {
+#home .custom-col-section-home-drag h2 {
     text-align: center;
 }
 
@@ -328,15 +332,15 @@ i.menu-mobile {
     left: 0;
 }
 
-#main .alert{
+#main .alert {
     position: fixed;
     z-index: 10;
     top: 18px;
     right: 50px;
+    /* opacity: 0; */
+    transition: opacity 1s;
     /* transition: all ease-in-out 0.5s; */
 }
-
-
 
 #footer {
     padding: 10px;
@@ -369,4 +373,10 @@ i.menu-mobile {
     background-color: #dd6e14;
     border-radius: 5%;
 }
+
+
+#btn-enviar-loader {
+    display: none;
+}
+
 

@@ -1,12 +1,12 @@
 @media (max-width: 1400px) {
     #sidebar {
         left: -300px; /* esconde a barra de menu */ 
-        z-index: 9997;
+        z-index: 9990;
     } 
 
     i.menu-mobile {
         display: flex; /* vai mostrar a barra de menu de hamburguer*/
-        z-index: 9999;
+        z-index: 9998;
         margin-top: 10px;
         top: 0;
 
@@ -102,11 +102,7 @@
     }
 
    
-    #main .alert {        
-        z-index: 9999;
-        top: 55px;
-        /* right: 50px; */
-    }
+    
 
     
 }
@@ -121,8 +117,15 @@
     }
 
     [data-anime="right"] {
-        transform: translate3d(-100%, 0, 0); /*x y, z */
+        transform: translate3d(0, 100%, 0); /*x y, z */
     }
 
-
+    #main .alert {        
+        z-index: 9999;
+        top: 60px;
+        left: 10px;
+        right: 10px;
+        text-align: center;
+        /* right: 50px; */
+    }
 }

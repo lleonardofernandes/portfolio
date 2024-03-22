@@ -20,3 +20,35 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#main .alert .slideIn {
+    animation: slideIn 0.5s forwards;
+}
+
+#main .alert .slideOut {
+    animation: slideOut 1.5s forwards;
+} 
+
+/* #alert {
+    opacity: 0;
+    transition: opacity 1s;
+}
