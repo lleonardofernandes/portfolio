@@ -60,22 +60,31 @@ html, body {
 }
 
 #sidebar .profile img{
-    margin: 10px auto; /* cima, direita, baixo, esquerda  */
+    margin: 10px auto; 
     display: block;
-    width: 250px;
-    /* border: 1px solid #2c2f3f; */
-    border-radius: 3%;
+    width: 200px;
+    border: 1.5px solid #dd6e14;
+    border-radius: 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transform: perspective(1000px) rotateY(20deg);
 }
+
+/* #sidebar .profile img{
+    margin: 15px auto; 
+    display: block;
+    width: 180px;
+    border: 1.5px solid #dd6e14;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+} */
 
 
 
 /* estilo das redes sociais */
 #sidebar .profile .social-links{
-    text-align: center; /* Alinha os itens ao centro horizontalmente */
-    display: flex; /* Ativa o modelo de layout flexível */
-    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
 }
 
 #sidebar .profile .social-links a {
@@ -86,6 +95,7 @@ html, body {
     border-radius: 50%;
     text-decoration: none;
     margin: 0 7px; /* Adicione margem entre os ícones para espaçamento */
+
 }
 
 #sidebar .profile .social-links a:hover{
@@ -177,8 +187,9 @@ html, body {
 }
 
 #home .custom-col-section-home h2 {
-    text-align: center;
+    text-align: left;
 }
+
 
 #home .custom-col-section-home-drag {
     display: flex;
@@ -205,15 +216,15 @@ section#home {
 
 section#home h2 {
     font-size: 6rem;
-    text-shadow: 2px 2px 8px #000000;;
+    text-shadow: 2px 2px 8px #000000;
     color: black;
 }
 
 section#home span#subtitle {
-    text-align: center;
     margin-right: 8rem;
     font-size: 2rem;
-    text-shadow: 1px 1px 3px #000000;;
+    text-shadow: 1px 1px 3px #000000;
+    /* text-align: right; */
 }
 
 section#home div#drag {
@@ -226,10 +237,12 @@ section#home div#drag a {
 }
 
 
-
-
 section#about h2 {
     text-align: left;
+}
+
+section#about li {
+    font-size: 1.2rem;
 }
 
 
@@ -245,9 +258,10 @@ section#about h2 {
 
 
 .cv .cv-title {
-    font-weight: 700;
+    font-weight: 500;
     margin: 20px 0;
     color: #050d18;
+    /* text-align: center; */
 }
 
 .cv .cv-item {
@@ -258,20 +272,23 @@ section#about h2 {
 }
 
 .cv .cv-item h4 {
-    line-height: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
+    line-height: 10px;
+    font-weight: 550;
+    /* text-transform: uppercase; */
     font-family: "Poppins", sans-serif;
     color: #050d18;
     margin-bottom: 10px;
 }
 
+
 .cv .cv-item h5 {
     background: #e4edf9;
-    padding: 5px 15px;
+    padding: 4px 10px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10px;
+    border-radius: 7px;
+    font-size: 0.9rem;
 }
 
 .cv .cv-item::before {
