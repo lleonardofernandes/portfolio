@@ -9,13 +9,16 @@ load_dotenv()
 app = Flask(__name__)
 app.secret_key = config.SECRET_KEY
 
+email = os.getenv("email")
+senha = os.getenv("senha")
+
 mail_settings = {
     "MAIL_SERVER": "smtp.gmail.com",
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": os.getenv("email"),
-    "MAIL_PASSWORD": os.getenv("senha") 
+    "MAIL_USERNAME": email,
+    "MAIL_PASSWORD": senha 
 }
 
 app.config.update(mail_settings)
