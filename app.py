@@ -1,6 +1,10 @@
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 import modules.config as config
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = config.SECRET_KEY
@@ -10,8 +14,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": config.email,
-    "MAIL_PASSWORD": config.password   
+    "MAIL_USERNAME": os.getenv("email"),
+    "MAIL_PASSWORD": os.getenv("senha") 
 }
 
 app.config.update(mail_settings)
@@ -43,8 +47,10 @@ def send():
             sender = app.config.get("MAIL_USERNAME"),
             recipients = ["contato@btools.com.br", app.config.get("MAIL_USERNAME")],
             body= f'''
-                Olá, {formContato.nome} com o e-mail {formContato.email} te envivou a seguinte mensagem:
+                {formContato.nome} te enviou a seguinte mensagem:  :
+                Email: {formContato.email}
                 
+                Mensagem: 
                 {formContato.mensagem}
             ''',
         )
