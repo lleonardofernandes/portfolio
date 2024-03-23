@@ -14,7 +14,7 @@ mail_settings = {
     "MAIL_PASSWORD": config.password   
 }
 
-app.config.update(config.mail_settings)
+app.config.update(mail_settings)
 mail = Mail(app)
 
 
