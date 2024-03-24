@@ -181,15 +181,12 @@ html, body {
 #home .custom-col-section-home {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
-    height: 100vh;
+    padding-left: 50px;
+    /* height: 100vh; */
+    padding-bottom: 200px;
 }
-
-#home .custom-col-section-home h2 {
-    text-align: left;
-}
-
 
 #home .custom-col-section-home-drag {
     display: flex;
@@ -204,7 +201,7 @@ html, body {
 
 
 section#home {
-    background-image: url("/static/img/bg_site.png");
+    background-image: url("/static/img/bg_site_2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -216,15 +213,15 @@ section#home {
 
 section#home h2 {
     font-size: 6rem;
-    text-shadow: 2px 2px 8px #000000;
-    color: black;
+    text-shadow: 2px 2px 8px #92979c;
+    color: #fff;
 }
 
 section#home span#subtitle {
-    margin-right: 8rem;
-    font-size: 2rem;
-    text-shadow: 1px 1px 3px #000000;
-    /* text-align: right; */
+    /* margin-right: 8rem; */
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 3px #92979c;
+    color: #fff;
 }
 
 section#home div#drag {
