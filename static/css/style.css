@@ -245,6 +245,19 @@ section#about li {
     font-size: 1.2rem;
 }
 
+section#about img {
+    margin: 20px auto; 
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    border: 1.5px solid #dd6e14;
+    border-radius: 4%;
+    /* box-shadow:  inset 0 0 1rem #00000050; */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    /* transform: perspective(1000px) rotateY(20deg); */
+
+}
+
 
 .section-bg {
     background-color: #eff5ff;
