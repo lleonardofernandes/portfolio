@@ -20,9 +20,6 @@
         /* right: 50px; */
     }
 
-    #home .custom-col-section-home-drag {
-        display: none;
-    }
 
 }
 
@@ -117,6 +114,10 @@
 
     #main .custon-span {
        display: none;
+    }
+
+    #home .custom-col-section-home-drag {
+        display: none;
     }
 
 
