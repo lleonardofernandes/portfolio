@@ -315,6 +315,10 @@ section#about img {
 }
 
 
+.email {
+    text-align: center;
+}
+
 .carousel-control-prev {
     margin-left: -6.5rem;
 }
