@@ -237,14 +237,14 @@ section#about h2 {
     text-align: left;
 }
 
-section#about li {
-    font-size: 1.2rem;
+section#about p {
+    font-size: 1.1em;
 }
 
 section#about img {
-    margin: 20px auto; 
+    /* margin: 10px auto;  */
     display: block;
-    width: 100%;
+    width: 90%;
     /* height: 100%; */
     border: 1.5px solid #001b37;
     border-radius: 4%;
