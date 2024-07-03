@@ -51,6 +51,18 @@
         /* z-index: 9995;   */
     }
 
+    section#home {
+        background-image: url("/static/img/bg_ml_site.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        -webkit-background-size: cover;
+        
+    }
+    
+
     /* #main h2, #main h5{
         font-size: 0.95rem;
     }

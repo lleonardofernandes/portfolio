@@ -18,6 +18,7 @@ html, body {
     height: 100%;
     margin: 0 0 8px;
     -webkit-text-size-adjust: none;
+    /* -webkit-background-size: cover; */
 }
 
 #sidebar {
@@ -205,6 +206,7 @@ section#home {
     background-position: center;
     /* width: 100%; */
     height: 100vh;
+    -webkit-background-size: cover;
     
 }
 
